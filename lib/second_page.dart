@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'color.dart';
 
 class SecondScreen extends StatelessWidget {
   @override
@@ -6,16 +7,13 @@ class SecondScreen extends StatelessWidget {
     print('${this} hashCode=${this.hashCode}');
     return Scaffold(
         appBar: AppBar(
-          title: Column(
-            children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Text('Second page'),
-              ),
-            ],
-          ),
+          backgroundColor:Color(color_ff455a64),
+          primary: true,
+          title: Text('组件'),
+          //状态的文字色彩模式
+          brightness: Brightness.dark,
+          centerTitle: true,
         ),
-        backgroundColor: Color(0xFFFFFFFF),
         body:  Column(
           children: <Widget>[ image, titleContent, button],
         ),

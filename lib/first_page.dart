@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'second_page.dart';
-
+import 'color.dart';
 
 List<String> list = new List();
 
@@ -33,7 +33,7 @@ class _ListState extends State<MainList> {
             appBar: new AppBar(
 
               title: Text("首页"),
-              backgroundColor: Colors.black54,
+              backgroundColor: Color(color_ff455a64),
               primary: true,
               leading: IconButton(
                   icon: Icon(Icons.home, color: Colors.white),
@@ -55,6 +55,8 @@ class _ListState extends State<MainList> {
               bottom: TabBar(
                   indicatorSize: TabBarIndicatorSize.tab,
                   isScrollable: true,
+                  indicatorColor: Colors.white,
+                  indicatorWeight: 4,
                   onTap: (int position) {
                     //do
                   },

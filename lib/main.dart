@@ -4,7 +4,8 @@ import 'package:flutter/services.dart';
 import 'bottom_navigation_widget.dart';
 import 'first_page.dart';
 import 'three_page.dart';
-
+import 'four_page.dart';
+import 'second_page.dart';
 
 
 void main() {
@@ -42,9 +43,9 @@ List<Widget> getContents() {
   List<Widget>  contents = new List<Widget>();
 
   contents.add(MainList());
-  contents.add(Text('推荐'));
+  contents.add(SecondScreen());
   contents.add(MovieList());
-  contents.add(Text('我的'));
+  contents.add(FourPage());
 
   return contents;
 
@@ -65,7 +66,7 @@ List<BottomNavigationBarItem> getTabs() {
   tabs.add(BottomNavigationBarItem(
       icon: Icon(Icons.category, color: Colors.black87),
       activeIcon:  Icon(Icons.category, color: Colors.deepOrange),
-      title: Text('分类', style: TextStyle(color: Colors.black87)
+      title: Text('组件', style: TextStyle(color: Colors.black87)
       )
   )
   );
