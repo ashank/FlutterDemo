@@ -6,6 +6,7 @@ import 'first_page.dart';
 import 'three_page.dart';
 import 'four_page.dart';
 import 'second_page.dart';
+import 'string.dart';
 
 
 void main() {
@@ -58,7 +59,7 @@ List<BottomNavigationBarItem> getTabs() {
   tabs.add(BottomNavigationBarItem(
       icon: Icon(Icons.add_a_photo, color: Colors.black87),
       activeIcon: Icon(Icons.add_a_photo, color: Colors.deepOrange),
-      title: Text('首页', style: TextStyle(color: Colors.black54)
+      title: Text(AppStrings.string_home, style: TextStyle(color: Colors.black54)
       )
   )
   );
@@ -66,21 +67,21 @@ List<BottomNavigationBarItem> getTabs() {
   tabs.add(BottomNavigationBarItem(
       icon: Icon(Icons.category, color: Colors.black87),
       activeIcon:  Icon(Icons.category, color: Colors.deepOrange),
-      title: Text('组件', style: TextStyle(color: Colors.black87)
+      title: Text(AppStrings.string_widget, style: TextStyle(color: Colors.black87)
       )
   )
   );
   tabs.add(BottomNavigationBarItem(
       icon: Icon(Icons.all_inclusive, color: Colors.black87),
       activeIcon: Icon(Icons.all_inclusive, color: Colors.deepOrange),
-      title: Text('电影', style: TextStyle(color: Colors.black87)
+      title: Text(AppStrings.string_movie, style: TextStyle(color: Colors.black87)
       )
   )
   );
   tabs.add(BottomNavigationBarItem(
       icon: Icon(Icons.filter_vintage, color: Colors.black87),
       activeIcon: Icon(Icons.filter_vintage, color: Colors.deepOrange),
-      title: Text('我的', style: TextStyle(color: Colors.black87)
+      title: Text(AppStrings.string_me, style: TextStyle(color: Colors.black87)
       )
   )
   );

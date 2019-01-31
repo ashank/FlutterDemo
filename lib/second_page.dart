@@ -7,7 +7,7 @@ class SecondScreen extends StatelessWidget {
     print('${this} hashCode=${this.hashCode}');
     return Scaffold(
         appBar: AppBar(
-          backgroundColor:Color(color_ff455a64),
+          backgroundColor:AppColors.color_ff455a64,
           primary: true,
           title: Text('组件'),
           //状态的文字色彩模式

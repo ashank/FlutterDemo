@@ -23,8 +23,8 @@ class  FourPageState  extends State<FourPage> {
     return Scaffold(
 
       appBar: AppBar(
-        title: Text(string_me),
-        backgroundColor: Color(color_ff455a64),
+        title: Text(AppStrings.string_me),
+        backgroundColor: AppColors.color_ff455a64,
         primary: true,
         centerTitle: true,
       ),

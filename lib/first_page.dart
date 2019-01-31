@@ -33,7 +33,7 @@ class _ListState extends State<MainList> {
             appBar: new AppBar(
 
               title: Text("首页"),
-              backgroundColor: Color(color_ff455a64),
+              backgroundColor: AppColors.color_ff455a64,
               primary: true,
               leading: IconButton(
                   icon: Icon(Icons.home, color: Colors.white),
@@ -103,7 +103,6 @@ class _ListState extends State<MainList> {
         children: <Widget>[
 
           new GestureDetector(
-
             onTap: () {
               Navigator.push(
                 context,
